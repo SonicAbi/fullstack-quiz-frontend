@@ -1,0 +1,69 @@
+{
+    "Typescript" : [
+        {
+            "question" : "Worauf kann in Typescript NICHT verzichtet werden?",
+            "answer" : "Angabe von Datentypen."
+        },
+        {
+            "question" : "Was besteht für eine Gefahr beim Datentyp 'any' ?",
+            "answer" : " Any kann jeden Typ annehmen ohne vorherige Überprüfung, es ist gefährlich da man dadurch die Typüberprüfung bewusst abschaltet."
+        },
+        {
+            "question" : "Nenne alle primitiven Datentypen, die du in Typescript kennst.",
+            "answer" : "string,number,boolean,null,undefined,symbol,bigint"
+        },
+        {
+            "question" : "Was sind Union Types ? Gib außerdem ein Beispiel.",
+            "answer" : "Union Types sind eine Möglichkeit, Variablen zu definieren, die mehrere Typen annehmen können.Beispiel : let id: string | number; id = '123';id = 123;"
+        },
+        {
+            "question" : "Was sind Generics in TypeScript und wie werden sie verwendet?",
+            "answer" : "Generics ermöglichen es, Funktionen, Klassen oder Schnittstellen so zu definieren, dass sie mit verschiedenen Datentypen arbeiten können, ohne den genauen Typ im Voraus festzulegen. Beispiel : function identity<T>(arg: T): T"
+        },
+        {
+            "question" : "Was ist der Zweck der readonly-Eigenschaft in TypeScript?",
+            "answer" : "Die readonly-Eigenschaft ermöglicht es, ein Objektattribut oder ein Array so zu deklarieren, dass dessen Wert nach der Initialisierung nicht mehr verändert werden kann."
+        },
+        {
+            "question" : "Ist es möglich von einem Interface eine Instanz zu erstellen, wie bei einer Klasse?",
+            "answer" : "Kurze Antwort : Nein."
+        },
+        {
+            "question" : "Wo liegt der Hauptunterschied zwischen einer abstrakten Klasse und einem Interface?",
+            "answer" : " Eine abstrakte Klasse kann sowohl abstrakte (nicht implementierte) als auch konkrete (implementierte) Methoden und Eigenschaften enthalten.Ein Interface kann nur Methodensignaturen und Eigenschaftsdefinitionen enthalten, jedoch keine Implementierungen."
+        },
+        {
+            "question" : "Wozu dienen die Utility - Typen Pick und Omit ?",
+            "answer" : "Mit Pick kann man bestimmte Eigenschaften aus einem Typ auswählen, mit Omit kann man bestimmte Eigenschaften entfernen."
+        },
+        {
+            "question" : "Was kannst du aus diesem Code heraus lesen ? interface Robbe extends Meeresbewohner {tauchzeit: number;}",
+            "answer" : "Robbe ist ein Interface was vom Meeresbewohner erbt und ein zusätzliches Attribut 'tauchzeit' hat. "
+        },
+        {
+            "question" : "Was gibt der typeof Operator zurück ?",
+            "answer" : "Den Typ des angefragten Wertes."
+        },
+        {
+            "question" : "Was ermöglicht eine Index Signature in TypeScript?",
+            "answer" : "Objekte mit dynamischen Schlüsseln zu definieren und zu typisieren"
+        },
+        {
+            "question" : "Was ist der 'Nullish Coalescing Operator' und worauf prüft er?",
+            "answer" : "Der Operator '??' überprüfut ob der linke Wert null oder undefined ist und falls ja, gibt es den rechten Wert zurück. Beispiel: const foo = null ?? 'default string'; "
+        },
+        {
+            "question" : "Wie nennt man die Fähigkeit die Typescript besitzt, dass let zahl = 5; automatisch als Typ number bestimmt wird?",
+            "answer" : "Typinferenz"
+        },
+        {
+            "question" : "Welcher Operator wird genutzt, wenn wir einen Typ besser kennen, als der Compiler?",
+            "answer" : "as- Operator"
+        },
+        {
+            "question" : "type Person = {name: string; age: number;}; , was gibt mir 'keyof Person' zurück?",
+            "answer" : "keyof Person gibt 'name' | 'age' zurück."
+        }
+
+    ]
+}

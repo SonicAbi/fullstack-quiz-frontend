@@ -1,0 +1,56 @@
+{
+  "HTMLundCSS": [
+    {
+      "question": "Wofür steht HTML und wofür dient es?",
+      "answer": "HTML steht für 'Hypertext Markup Language' und wird verwendet um den Inhalt und die Struktur von Webseiten zu definieren."
+    },
+    {
+      "question": "Nenne mind. 5 Tags die man in einer HTML auffinden kann.",
+      "answer": "- Überschriften: h1 - h6\n- Absätze: p\n- Bilder: img\n- Links: a href=...\n- Listen: ungeordnet : ul mit li Elementen.\n- Abschnitte : div\n- Inline-Container: span\n- Formulare: form, input, buttons"
+    },
+    {
+      "question": "Was sind HTML-Attribute? Nenne 2.",
+      "answer": "HTML-Attribute geben den Tags zusätzliche Informationen oder ändern ihr Verhalten.\n- class und id\n- src, alt, style, title"
+    },
+    {
+      "question": "Welches HTML-Attribut benötigst du wenn du ein Pflichtfeld in einem Formular benötigst?",
+      "answer": "required"
+    },
+    {
+      "question": "Was ist hier schief gelaufen?",
+      "answer": "TR und TD wurden vertauscht, thead hat kein schließendes Tag."
+    },
+    {
+      "question": "Was ist CSS und wofür wird es verwendet?",
+      "answer": "CSS (Cascading Style Sheet) ist eine Stylesheet-Sprache, die verwendet wird, um das Aussehen von HTML-Dokumenten zu beschreiben."
+    },
+    {
+      "question": "Wozu wird ein CSS-Reset benötigt?",
+      "answer": "Damit die Standard-Styles des Browsers überschrieben werden und meine Styles bei jedem Browser gleich aussehen."
+    },
+    {
+      "question": "Welche CSS-Eigenschaft muss auf den Container angewendet werden, um Flexbox zu aktivieren?",
+      "answer": "display: flex;"
+    },
+    {
+      "question": "Worin liegt der Hauptunterschied zwischen Flexbox und Grid in Bezug auf das Layout?",
+      "answer": "Flexbox ist eindimensional und arbeitet entlang einer Haupt- und Querachse (horizontal oder vertikal). Grid ist zweidimensional und ermöglicht die Kontrolle über Zeilen und Spalten."
+    },
+    {
+      "question": "Wie kannst du Flex-Items in einem Container von rechts nach links anordnen, ohne das HTML zu ändern?",
+      "answer": "display: flex;\nflex-direction: row-reverse;"
+    },
+    {
+      "question": "Was ist der Unterschied zwischen margin und padding?",
+      "answer": "- margin: Der äußere Abstand eines Elements zum nächsten Element (außerhalb des Rahmens).\n- padding: Der innere Abstand zwischen dem Inhalt eines Elements und dessen Rahmen."
+    },
+    {
+      "question": "Was versteht man unter dem Wort 'Responsive Design'?",
+      "answer": "Ein Webseiten-Design, das sich der Bildschirmbreite anpasst (wichtig für Webseiten, die sowohl mobil als auch über PC schön aussehen sollen)."
+    },
+    {
+      "question": "Es können auch Custom Properties (CSS-Variablen) verwendet werden, was ist das und wozu dienen sie?",
+      "answer": "CSS-Variablen werden mit einem doppelten Bindestrich definiert und sind im :root-Selektor anzutreffen. Es sind sozusagen eigene Variablen. Wozu? Damit diese global verfügbar sind, der Code ist dadurch flexibler und leichter zu warten.\n\nBeispiel:\n:root {\n  --primary-color: #3498db;\n}\nbody {\n  background-color: var(--primary-color);\n}"
+    }
+  ]
+}

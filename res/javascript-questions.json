@@ -1,0 +1,64 @@
+{
+    "Javascript" : [
+        {
+            "question": "Was ist der Unterschied zwischen let & const?",
+            "answer": "Const ist nach dem definieren nicht mehr veränderbar, let schon."
+        },
+        {
+            "question" : "Was ist der Vorteil von Arrow Functions ?",
+            "answer": "Sie vereinfachen die Syntax."
+        },
+        {
+            "question" : "Wie verhalten sich Variablen innerhalb eines Scopes, in Bezug auf Sichtbarkeit und Lebensdauer?",
+            "answer" : "Wenn eine Funktion beendet ist, wird der Scope verlassen und alle inneren Variablen werden aufgeräumt, außerdem sind Variablen innerhalb eines Scopes auch nur dort sichtbar."
+        },
+        {
+            "question" : "Was ist Destructuring in JavaScript und wie funktioniert es? Gebe ein Beispiel anhand eines Objekts.",
+            "answer" : "Destructuring ist eine JavaScript-Syntax, die es ermöglicht, Werte aus Arrays oder Properties aus Objekten in separate Variablen zu extrahieren. Beispiel:const person = { name: 'Max', age: 30 };const { name, age } = person;"
+        },
+        {
+            "question" : "Wie nennt man diesen ... Operator?: const numbers = [1, 2, 3]; const moreNumbers = [...numbers, 4, 5];",
+            "answer" : "Spread Operator"
+        },
+        {
+            "question" : "Was ist der Unterschied zwischen dem Rest-Operator und dem Spread-Operator?",
+            "answer" : "Der Rest-Operator wird verwendet, um Werte zu sammeln (z.B. in einer Funktion oder beim Destructuring), während der Spread-Operator verwendet wird, um Werte zu verteilen (z.B. in Arrays oder Objekten)."
+        },
+        {
+            "question" : "Worauf zeigt this in einer Arrow Function?",
+            "answer" : "This wird vom äußeren Kontext übernommen"
+        },
+        {
+            "question" : "Was ist zu beachten wenn man statische Methoden in einer Klasse verwendet?",
+            "answer" : "Statische Methoden können NICHT auf einer Klasseninstanz aufgerufen werden."
+        },
+        {
+            "question" : "Wie deklariere ich eine private Eigenschaft in einer Klasse? zb. City?",
+            "answer" : "#city , mit dem vorangestellten '#'."
+        },
+        {
+            "question" : "Was ist ein Event?",
+            "answer" : "Ein Event ist eine Benutzeraktion (zb. Ein Klick, oder eine Mausbewegung) oder ein Systemereignis (zb. Laden der Webseite)."
+        },
+        {
+            "question" : "Welcher Befehl wird benötigt, um Event Bubbling zu verhindern?",
+            "answer" : "stopPropagation();"
+        },
+        {
+            "question" : "Wozu ist eine Debounce Funktion hilfreich und notwendig?",
+            "answer" : "Ein Debounce verhindert das zu häufige wiederholen von Ereignissen und ist notwendig um bei Serverinteraktionen den Server zu entlasten."
+        },
+        {
+            "question" : "Was sind Callbacks?",
+            "answer" : "Callbacks sind Funktionen, die an eine andere Funktion übergeben werden und nach Abschluss einer Aufgabe aufgerufen werden."
+        },
+        {
+            "question" : "Was machen die Keywords 'async' und 'await'?",
+            "answer" : "async markiert eine Funktion als asynchron und gibt immer ein Promise zurück.await pausiert die Ausführung der Funktion, bis das Promise erfüllt oder abgelehnt wird."
+        },
+        {
+            "question" : "Wie kann ein neues HTML Element, dass in der Variable 'title' gespeichert ist, in den DOM eingehängt werden?",
+            "answer" : "document.body.appendChild(title)"
+        }
+    ]
+}
