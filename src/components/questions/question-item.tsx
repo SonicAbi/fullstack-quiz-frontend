@@ -12,14 +12,14 @@ export function QuestionItem({ question, answer, code }: QuestionItemProps) {
   const answerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <Card className="flex flex-col">
+    <Card className="flex flex-col ">
       <CardHeader>
-        <CardTitle>
+        <CardTitle className="flex ">
           <span>{question}</span>
         </CardTitle>
         <Button
           onClick={() => answerRef.current?.classList.toggle("hidden")}
-          className="w-20"
+          className="w-20 bg-blue-400 "
         >
           Antwort
         </Button>

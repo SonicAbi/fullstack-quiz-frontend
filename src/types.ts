@@ -1,12 +1,11 @@
 export type Question = {
-  category: string;
   question: string;
   answer: string;
-  code?: string
+  code?: string;
+  categoryName: string;
 };
 
-export type API = Question[];
-
-export type APIResponse = {
-  [key: string]: API;
+export type Category = {
+  id: number;
+  name: string;
 };

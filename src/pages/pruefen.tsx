@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Question } from "../types";
-import { useQuestionSate } from "../services/questionStore";
+import { useQuestionState } from "../store/questionStore";
 import {
   Card,
   CardHeader,
@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card";
 
 export function Pruefung() {
-  const questions = useQuestionSate((state) => state.questions);
+  const questions = useQuestionState((state) => state.questions);
   const [randomQuestions, setRandomQuestions] = useState<any[]>([]);
   const [answers, setAnswers] = useState<{ [key: number]: string }>({});
   const [submitted, setSubmitted] = useState<boolean>(false);
