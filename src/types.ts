@@ -9,3 +9,11 @@ export type Category = {
   id: number;
   name: string;
 };
+
+export type ApiResponse<T> =
+  | {
+      data: T;
+    }
+  | {
+      error: string;
+    };
