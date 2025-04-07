@@ -3,9 +3,10 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./app";
-import { Lernen } from "./pages/lernen";
+import { CategoriesSelector } from "./pages/categories-selector";
 import { Pruefung } from "./pages/pruefen";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Body } from "./components/body";
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
@@ -15,7 +16,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Lernen />,
+        element: <CategoriesSelector />,
+      },
+      {
+        path: "/questions",
+        element: <Body />,
       },
       {
         path: "/pruefen",
