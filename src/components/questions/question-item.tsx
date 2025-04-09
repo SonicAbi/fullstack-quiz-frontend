@@ -24,27 +24,28 @@ export function QuestionItem({ question, answer, code }: QuestionItemProps) {
           </Button>
         </div>
       </CardHeader>
-      <CardContent ref={answerRef} className="hidden">
-        <div className="flex flex-col gap-4">
-          <div className="rounded-lg bg-green-100 p-4">
-            <h2 className="mb-2 flex items-center gap-2 text-lg font-semibold">
-              Lösung:
-            </h2>
-            <p className="whitespace-pre-wrap break-words text-base">
-              {answer}
-            </p>
-          </div>
 
-          {code && (
-            <div className="overflow-x-auto rounded-md bg-gray-800 p-4 text-sm text-white">
-              <h2 className="mb-2 font-semibold text-green-300">
-                💻 Code-Beispiel:
-              </h2>
-              <code className="block whitespace-pre break-words">{code}</code>
-            </div>
-          )}
+      {/* Antwort ist toggelbar */}
+      <CardContent ref={answerRef} className="hidden">
+        <div className="rounded-lg bg-green-100 p-4">
+          <h2 className="mb-2 flex items-center gap-2 text-lg font-semibold">
+            Lösung:
+          </h2>
+          <p className="whitespace-pre-wrap break-words text-base">{answer}</p>
         </div>
       </CardContent>
+
+      {/* Code ist IMMER sichtbar */}
+      {code && (
+        <CardContent>
+          <div className="overflow-x-auto rounded-md bg-gray-800 p-4 text-sm text-white">
+            <h2 className="mb-2 font-semibold text-green-300">
+              💻 Code-Beispiel:
+            </h2>
+            <code className="block whitespace-pre break-words">{code}</code>
+          </div>
+        </CardContent>
+      )}
     </Card>
   );
 }
