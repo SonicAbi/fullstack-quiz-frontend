@@ -4,7 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./app";
 import { CategoriesSelector } from "./pages/categories-selector";
-import { Pruefung } from "./pages/pruefen";
+import { QuizPage } from "./pages/quiz-page";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Body } from "./components/body";
 
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/pruefen",
-        element: <Pruefung />,
+        element: <QuizPage />,
       },
     ],
   },
