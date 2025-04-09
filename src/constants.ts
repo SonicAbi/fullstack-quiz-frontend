@@ -1,1 +1,2 @@
-export const API_URL = "https://fs-quiz.azurewebsites.net/";
+export const API_URL =
+  "fs-quiz-backend-f8h6gxh8habnbcct.germanywestcentral-01.azurewebsites.net/";
