@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { ApiResponse, Question } from "../types";
+import { API_URL } from "@/constants";
 
 
 export const useQuestions = (category: string | undefined) =>
@@ -10,7 +11,7 @@ export const useQuestions = (category: string | undefined) =>
 
 const getQuestions = async (category: string | undefined) => {
   const response = await fetch(
-    `http://localhost:3000/questions?category=${category}`,
+    `${API_URL}/questions?category=${category}`,
   );
   const json: ApiResponse<Question[]> = await response.json();
   if ("error" in json) {

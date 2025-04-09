@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { ApiResponse, Question } from "../types";
+import { API_URL } from "@/constants";
 
 export const useRandomQuestions = () =>
   useQuery<Question[]>({
@@ -9,7 +10,7 @@ export const useRandomQuestions = () =>
 
 const getQuestions = async () => {
   const response = await fetch(
-    `http://localhost:3000/questions/random`,
+    `${API_URL}/questions/random`,
   );
   const json: ApiResponse<Question[]> = await response.json();
   if ("error" in json) {
